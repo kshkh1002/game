@@ -1,3 +1,5 @@
+import { FRUITS } from "./fruits";
+
 var Engine = Matter.Engine,
 Render = Matter.Render,
 Render = Matter.Render,
@@ -44,4 +46,18 @@ World.add(world, [leftWall, rightWall, gorund, topLine]);
 Render.run(render);
 Render.run(engine);
 
+function addFruit() {
 
+    const index = 0;
+
+    const fruit = FRUITS[index];
+
+    const body = Bodies.circle(300, 50, fruit.radius, {
+
+        render : {
+            sprite : {}
+        }
+    });
+}
+
+addFruit();

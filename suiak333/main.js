@@ -55,9 +55,10 @@ function addFruit() {
     const body = Bodies.circle(300, 50, fruit.radius, {
 
         render : {
-            sprite : {}
+            sprite : {texttrue : `${truit.name}.png`},
         }
     });
+    World.add(world, body);
 }
 
 addFruit();

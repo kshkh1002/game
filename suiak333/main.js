@@ -1,4 +1,4 @@
-import { FRUITS } from "./fruits";
+import { FRUITS } from "/suika33/fruits.js";
 
 var Engine = Matter.Engine,
 Render = Matter.Render,
@@ -58,6 +58,7 @@ function addFruit() {
             sprite : {texttrue : `${truit.name}.png`},
         }
     });
+
     World.add(world, body);
 }
 
